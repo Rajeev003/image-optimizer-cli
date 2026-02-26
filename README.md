@@ -15,6 +15,8 @@ Este arquivo garantirá que qualquer contribuição futura ou alteração sua ma
 
 > Ferramenta profissional de otimização de assets em paralelo, desenvolvida com tipagem estrita para máxima confiabilidade.
 
+![Demonstração do Template](./template.gif)
+
 ---
 
 ```yaml
