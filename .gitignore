@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments (uv / venv)
+.venv/
+venv/
+ENV/
+
+# Mypy & Linting
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Environment Variables
+.env
+.venv
+.env.local
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Project Specific
+assets_output/
+.idea/
+.vscode/
